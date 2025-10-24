@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://www.schemastore.org/clang-format-21.x.json
 AccessModifierOffset: 4
 AlignAfterOpenBracket: BlockIndent
 AlignArrayOfStructures: None
@@ -5,7 +6,11 @@ AlignConsecutiveAssignments: None
 AlignConsecutiveBitFields: None
 AlignConsecutiveDeclarations: None
 AlignConsecutiveMacros: None
-AlignConsecutiveShortCaseStatements: None
+AlignConsecutiveShortCaseStatements:
+  Enabled: false
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCaseColons: false
 AlignEscapedNewlines: LeftWithLastLine
 AlignOperands: DontAlign
 AlignTrailingComments:
@@ -48,7 +53,7 @@ ColumnLimit: 0
 CompactNamespaces: false
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
-Cpp11BracedListStyle: FunctionCall
+Cpp11BracedListStyle: true
 DerivePointerAlignment: false
 DisableFormat: false
 EmptyLineAfterAccessModifier: Leave
@@ -97,7 +102,7 @@ ReflowComments: Never
 RemoveBracesLLVM: false
 RemoveEmptyLinesInUnwrappedLines: true
 RemoveParentheses: Leave
-RemoveSemicolon: Leave
+RemoveSemicolon: false
 RequiresClausePosition: OwnLine
 RequiresExpressionIndentation: OuterScope
 SeparateDefinitionBlocks: Always
