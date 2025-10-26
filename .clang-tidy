@@ -1,0 +1,12 @@
+Checks:
+  bugprone-*
+  cppcoreguidelines-*
+  hicpp-*
+  misc-*
+  modernize-*
+  performance-*
+  portability-*
+  -portability-avoid-pragma-once
+  readability-*
+HeaderFileExtensions: ['.hpp']
+ImplementationFileExtensions: ['.cpp']
